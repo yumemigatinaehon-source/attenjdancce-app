@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
   res.send(`
     <h1>出席確認ページ</h1>
     <form method="POST" action="/checkin">
-      <input type="text" name="name" placeholder="名前を入力" required>
+      <input type="text" name="name" placeholder="出席番号を入力" required>
       <button type="submit">出席</button>
     </form>
   `);
