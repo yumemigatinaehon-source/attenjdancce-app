@@ -20,7 +20,7 @@ app.listen(port, () => {
 // 出席情報保存
 app.post("/attend", (req, res) => {
   const { name } = req.body;
-  if (!name) return res.status(400).send("名前を入力してください");
+  if (!name) return res.status(400).send("お名前を入力してください");
 
   attendanceList.push({ name, time: new Date() });
   res.send(`出席登録完了: ${name}`);
